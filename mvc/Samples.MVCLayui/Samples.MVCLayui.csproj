@@ -5,12 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\modules\checkinpersoninfo.ts" />
+    <Content Remove="wwwroot\modules\main.ts" />
+    <Content Remove="wwwroot\modules\orderconfirm.ts" />
     <Content Remove="wwwroot\modules\test.ts" />
+    <Content Remove="wwwroot\pages\checkin\idcard.ts" />
+    <Content Remove="wwwroot\pages\checkin\mobile.ts" />
+    <Content Remove="wwwroot\pages\checkin\order.ts" />
     <Content Remove="wwwroot\pages\home\index.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\modules\orderconfirm.ts" />
+    <TypeScriptCompile Include="wwwroot\modules\main.ts" />
+    <TypeScriptCompile Include="wwwroot\modules\checkinpersoninfo.ts" />
     <TypeScriptCompile Include="wwwroot\modules\test.ts" />
+    <TypeScriptCompile Include="wwwroot\pages\checkin\order.ts" />
+    <TypeScriptCompile Include="wwwroot\pages\checkin\mobile.ts" />
+    <TypeScriptCompile Include="wwwroot\pages\checkin\idcard.ts" />
     <TypeScriptCompile Include="wwwroot\pages\home\index.ts" />
     <TypeScriptCompile Include="wwwroot\typings\JQuery.d.ts" />
     <TypeScriptCompile Include="wwwroot\typings\JQueryStatic.d.ts" />

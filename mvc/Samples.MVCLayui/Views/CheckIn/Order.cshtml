@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<button id="m">查询订单</button>
+
+@section scripts {
+    <script src="~/pages/checkin/order.js"></script>
+    <script src="~/modules/checkinpersoninfo.js"></script>
+
+    <script>
+        layui.define(['layer', 'orderconfirm', 'main'], function (exports) {
+            $("#m").click(function () {
+                let orderInfo = layui.orderconfirm.QueryOrder();
+                alert(JSON.stringify(orderInfo));
+            });
+        });
+    </script>
+}

@@ -9,10 +9,15 @@
 
 <button id="m">模块方法</button>
 <button id="p">页面方法</button>
+<button id="q">Main进入CheckInPersonInfo</button>
+
 @section scripts {
     <script src="~/pages/home/index.js"></script>
+    <script src="~/modules/checkinpersoninfo.js"></script>
+    <script src="~/modules/orderconfirm.js"></script>
+
     <script>
-        layui.define(['test', 'layer'], function (exports) {
+        layui.define(['test', 'layer', 'main'], function (exports) {
 
             $("#m").click(function () {
                 layui.test.showMsg();
@@ -20,6 +25,10 @@
 
             $("#p").click(function () {
                 layui.currentPage.showMsgInPage();
+            });
+
+            $("#q").click(function () {
+                layui.main.CollectCheckInPersonInfo();
             });
 
         });
