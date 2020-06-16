@@ -1,0 +1,21 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "module": "none",
+    "target": "es5",
+    "skipLibCheck": true
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "typings",
+    "node_modules",
+    "wwwroot",
+    "lib"
+  ]
+}

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<button id="m">模块方法</button>
+<button id="p">页面方法</button>
+@section scripts {
+    <script src="~/pages/home/index.js"></script>
+    <script>
+        layui.define(['test', 'layer'], function (exports) {
+
+            $("#m").click(function () {
+                layui.test.showMsg();
+            });
+
+            $("#p").click(function () {
+                layui.currentPage.showMsgInPage();
+            });
+
+        });
+    </script>
+}
