@@ -36,6 +36,6 @@ class Main {
     }
 }
 
-layui.define(['layer'], (exports) => {
+layui.define(['layer', 'orderconfirm', 'checkinpersoninfo'], (exports) => {
     exports('main', new Main()); 
 });

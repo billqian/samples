@@ -9,10 +9,9 @@
 
 @section scripts {
     <script src="~/pages/checkin/mobile.js"></script>
-    <script src="~/modules/orderconfirm.js"></script>
 
     <script>
-        layui.define(['layer', 'checkinpersoninfo', 'main'], function (exports) {
+        layui.define(['layer', 'checkinpersoninfo', 'main', 'orderconfirm'], function (exports) {
             $("#m").click(function () {
                 let mobileInfo = layui.checkinpersoninfo.SetMobile("18862489916");
                 alert(JSON.stringify(mobileInfo));

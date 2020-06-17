@@ -30,7 +30,7 @@ var Main = /** @class */ (function () {
     };
     return Main;
 }());
-layui.define(['layer'], function (exports) {
+layui.define(['layer', 'orderconfirm', 'checkinpersoninfo'], function (exports) {
     exports('main', new Main());
 });
 //# sourceMappingURL=main.js.map
